@@ -38,8 +38,7 @@ public class RecoveryRoomController {
     public String initCreationForm(@Valid RecoveryRoom recoveryRoom, BindingResult result) {
         if (result.hasErrors()) {
             return VIEWS_RECOVERY_ROOM_CREATE_OR_UPDATE_FORM;
-        }
-        else {
+        } else {
             //creating owner, user and authorities
             this.recoveryRoomService.save(recoveryRoom);
             return "welcome";

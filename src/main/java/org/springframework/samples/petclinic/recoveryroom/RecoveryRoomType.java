@@ -16,7 +16,7 @@ public class RecoveryRoomType {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Integer id;
 
-    @Size(min = 3, max = 50)
+    @Size(min = 5, max = 50)
     @Column(unique = true)
     String name;
 }
